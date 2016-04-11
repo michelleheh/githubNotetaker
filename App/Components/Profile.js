@@ -1,5 +1,6 @@
 var React = require('react-native');
 var Badge = require('./Badge');
+var Separator = require('./Separator')
 
 var {
   Text,
@@ -47,6 +48,7 @@ class Profile extends React.Component{
             <View style={styles.rowContainer}>
               <Text style={styles.rowTitle}> {this.getRowTitle(item)} </Text>
               <Text style={styles.rowContent}> {userInfo[item]} </Text>
+              <Separator />
             </View>
           </View>
         )
